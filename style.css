@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   /* padding-top: 20px !important; */
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+}
+.navbar-header .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: white !important;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+/*---home---*/
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)), url(img/juice-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px !important;
+    margin-top: -20px;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 2px;
+}
+#home p{
+    font-size: 18px;
+    color: white;
+}
+#home .input-group{
+    width: 45%;
+    height: 50px;
+    display: flex;
+}
+#home .input-group input[type="text"]{
+    height: 50px;
+}
+.signin{
+    background-color: hotpink !important;
+    color: white !important;
+}
+
+/*---about---*/
+#about{
+    background: linear-gradient(to right,rgb(247, 244, 245),rgb(182, 181, 181)); 
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color: rgb(24, 22, 22);
+}
+#about p{
+    color: white;
+}
+
+/*---product---*/
+#juice{
+    background: rgb(233, 230, 230);
+}
+#juice h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+#juice img{
+    height: 200px;
+    width: 220px;
+    margin: 10px;
+}
+.card{
+    height: 300px;
+    width: 250px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),inset -4px -4px 10px white;
+    transition: .2s;
+}
+/*---contact---*/
+#contact{
+    margin-bottom: 50px;
+}
+#contact h1{
+    font-weight: 700;
+}
+#contact img{
+    height: 40%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+footer{
+    height: 30px !important;
+    background-color: black;
+    margin-top: -30px;
+    text-align: center;
+    color: white;
+    padding: 4px;
+}
+@media screen and (max-width: 400px) {
+    .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+}
